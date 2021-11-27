@@ -15,8 +15,9 @@ void main(void)
   PORTB = 0x0;
   PORTD = 0x0;
   ADMUX = 0b00000000;                // ADC7 단극성 입력 선택   //아날로그 신호를 디지털 신호로 변환 
-  ADCSRA = 0b10000100;              // ADEN=1, 16MHz  256분주 -> 125kHz 
-  delay_ms(5);  
+  ADCSRA = 0b10000100;              // ADEN=1, 16MHz  256분주 -> 125kHz
+  delay_ms(5);
+  
   while(1){
     ADCSRA = 0b11000100;                        // ADEN=1, ADSC = 1 변환 시작
     while((ADCSRA & 0x10) == 0);                // ADIF=1이 될떄까지
@@ -24,11 +25,12 @@ void main(void)
       fire = (int)ADCL + ((int)ADCH << 8);
       AD_disp(ad_val);                            // A/D 변환값 표시
           }
-}                                                       // A/D 변환값 표시
+}                                                     
 void fire(int fir)
 {
   int fi;
   fi=(int)fir*5.0/1024;
+  
   if(fi>0){
     DDRE=0xFF;
     PORTE=0xFF;
