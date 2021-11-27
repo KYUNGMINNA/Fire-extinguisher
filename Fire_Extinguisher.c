@@ -84,9 +84,4 @@ void AD_disp(int val) 
   PORTB = (seg_pat[N100] & 0x70) | (PORTB & 0x0F);          // 10자리 e,f,g 표시
   PORTD = ((seg_pat[N100] & 0x0F) << 4) | (PORTD & 0x0F); // a, b, c, d 표시
   delay_ms(1);
-} 
-
-
-
-
-
+}
