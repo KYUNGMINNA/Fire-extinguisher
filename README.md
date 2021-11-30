@@ -1,4 +1,4 @@
-### It is a fire extinguisher that combines a gas sensor and a motor pump.
+## It is a fire extinguisher that combines a gas sensor and a motor pump.
 ### Main Function
 - Gas spill recognition.
 - Sound the Alarm
