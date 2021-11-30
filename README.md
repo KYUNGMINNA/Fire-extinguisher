@@ -1,4 +1,9 @@
 ### It is a fire extinguisher that combines a gas sensor and a motor pump.
+### Main Function
+- Gas spill recognition.
+- Sound the Alarm
+- Water pump movement 
+
 ### Equipment Parts
 - ATmega128
 - high performance Alarm buzzer 12V — FQ-062
