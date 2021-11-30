@@ -1,7 +1,4 @@
-# Fire-extinguisher
-## Microcontroller __ATmega128
-
-### TOPIC :It is a fire extinguisher that combines a gas sensor and a motor pump.
+### It is a fire extinguisher that combines a gas sensor and a motor pump.
 ### Equipment Parts
 - ATmega128
 - high performance Alarm buzzer 12V — FQ-062
